@@ -1,0 +1,106 @@
+
+Packet Tracer PC Command Line 1.0
+C:\>ping 172.22.34.64
+
+Pinging 172.22.34.64 with 32 bytes of data:
+
+Request timed out.
+Reply from 172.22.34.65: Destination host unreachable.
+Reply from 172.22.34.65: Destination host unreachable.
+Reply from 172.22.34.65: Destination host unreachable.
+
+Ping statistics for 172.22.34.64:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+
+C:\>ping 172.22.34.62
+
+Pinging 172.22.34.62 with 32 bytes of data:
+
+Request timed out.
+Reply from 172.22.34.62: bytes=32 time=1ms TTL=127
+Reply from 172.22.34.62: bytes=32 time=2ms TTL=127
+Reply from 172.22.34.62: bytes=32 time=1ms TTL=127
+
+Ping statistics for 172.22.34.62:
+    Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 1ms, Maximum = 2ms, Average = 1ms
+
+C:\>ping 0.0.0.31
+
+Pinging 0.0.0.31 with 32 bytes of data:
+
+Reply from 172.22.34.65: Destination host unreachable.
+Reply from 172.22.34.65: Destination host unreachable.
+Reply from 172.22.34.65: Destination host unreachable.
+Reply from 172.22.34.65: Destination host unreachable.
+
+Ping statistics for 0.0.0.31:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+
+C:\>cls
+Invalid Command.
+
+C:\>clear
+Invalid Command.
+
+C:\>cls
+Invalid Command.
+
+C:\>ftp 172.22.34.62
+Trying to connect...172.22.34.62
+Connected to 172.22.34.62
+220- Welcome to PT Ftp server
+Username:quit
+
+%Error ftp://172.22.34.62/ (No such Account)
+332- Need account for login
+
+
+
+ftp 172.22.34.62
+Trying to connect...172.22.34.62
+Connected to 172.22.34.62
+220- Welcome to PT Ftp server
+Username:cisco
+331- Username ok, need password
+Password:
+
+%Error ftp://172.22.34.62/ (No such Account)
+332- Need account for login
+
+
+C:\>ftp 172.22.34.62
+Trying to connect...172.22.34.62
+Connected to 172.22.34.62
+220- Welcome to PT Ftp server
+Username:cisco
+331- Username ok, need password
+Password:
+230- Logged in
+(passive mode On)
+ftp>quit
+
+221- Service closing control connection.
+C:\>ipconfig
+
+FastEthernet0 Connection:(default port)
+
+   Link-local IPv6 Address.........: FE80::2D0:58FF:FECB:1826
+   IP Address......................: 172.22.34.66
+   Subnet Mask.....................: 255.255.255.224
+   Default Gateway.................: 172.22.34.65
+
+C:\>ping 172.22.34.98
+
+Pinging 172.22.34.98 with 32 bytes of data:
+
+Reply from 172.22.34.65: Destination host unreachable.
+Reply from 172.22.34.65: Destination host unreachable.
+Reply from 172.22.34.65: Destination host unreachable.
+Reply from 172.22.34.65: Destination host unreachable.
+
+Ping statistics for 172.22.34.98:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+
+C:\>
